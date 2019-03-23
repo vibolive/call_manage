@@ -14,11 +14,14 @@ import android.view.View;
 
 import com.chooloo.www.callmanager.R;
 import com.chooloo.www.callmanager.adapter.ContactsAdapter;
+import com.chooloo.www.callmanager.database.entity.Contact;
 import com.chooloo.www.callmanager.ui.fragment.base.AbsRecyclerViewFragment;
 import com.chooloo.www.callmanager.util.Utilities;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.lifecycle.ViewModel;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.loader.app.LoaderManager;
 import androidx.loader.content.CursorLoader;
@@ -35,6 +38,7 @@ public class ContactsFragment extends AbsRecyclerViewFragment implements LoaderM
 
     private static final int LOADER_ID = 1;
     private static final String ARG_PHONE_NUMBER = "phone_number";
+    private static final String ARG_CONTACT_NAME = "contact_name";
 
     private static final String IGNORE_NUMBER_TOO_LONG_CLAUSE =
             "length(" + Phone.NUMBER + ") < 1000";
@@ -139,8 +143,15 @@ public class ContactsFragment extends AbsRecyclerViewFragment implements LoaderM
             phoneNumber = args.getString(ARG_PHONE_NUMBER);
         }
 
+        String contactName = null;
+        if (args != null && args.containsKey(ARG_CONTACT_NAME)) {
+            contactName = args.getString(ARG_CONTACT_NAME);
+        }
+
         if (phoneNumber != null && !phoneNumber.isEmpty()) {
             builder = Uri.withAppendedPath(Phone.CONTENT_FILTER_URI, Uri.encode(phoneNumber)).buildUpon();
+        } else if (contactName != null && !contactName.isEmpty()) {
+            builder = Uri.withAppendedPath(Phone.CONTENT_FILTER_URI, Uri.encode(contactName)).buildUpon();
         } else {
             builder = Phone.CONTENT_URI.buildUpon();
         }

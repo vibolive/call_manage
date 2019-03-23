@@ -3,10 +3,6 @@
 
     <corners android:radius="@dimen/bubble_corner_radius" />
 
-    <solid android:color="@color/dialer_background" />
-
-    <stroke
-        android:width="@dimen/bubble_border_width"
-        android:color="#D8D8D8" />
+    <solid android:color="@color/grey" />
 
 </shape>

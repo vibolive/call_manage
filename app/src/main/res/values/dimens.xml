@@ -7,16 +7,20 @@
     <dimen name="default_edge_padding">8dp</dimen>
 
     <dimen name="app_bar_corner_radius">16dp</dimen>
-    <dimen name="action_bar_size">48dp</dimen>
+    <dimen name="action_bar_size">45dp</dimen>
 
     <dimen name="flat_button_size">64dp</dimen>
     <dimen name="flat_button_padding">16dp</dimen>
     <dimen name="text_margin">16dp</dimen>
 
-    <dimen name="bubble_corner_radius">20dp</dimen>
+    <dimen name="bubble_corner_radius">19dp</dimen>
 
     <dimen name="phone_number_input_height">64dp</dimen>
     <dimen name="phone_number_input_with_margins_height">72dp</dimen>
+
+    <dimen name="appbar_margin">5dp</dimen>
+
+    <dimen name="appbar_padding">20dp</dimen>
 
     <!-- TODO decide between 0.75 and 0.74 -->
     <!-- Here i choosed between 0.75 and 0.74, both have cons and pros -->
