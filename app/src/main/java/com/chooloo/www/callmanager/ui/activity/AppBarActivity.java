@@ -20,8 +20,6 @@ public class AppBarActivity extends AppCompatActivity {
     @BindView(R.id.toolbar) Toolbar mToolbar;
     @BindView(R.id.toolbar_title) TextView mTextTitle;
 
-    SharedSearchViewModel mSharedSearchViewModel;
-
     @Override
     protected void onStart() {
         super.onStart();
