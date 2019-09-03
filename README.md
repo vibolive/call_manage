@@ -5,7 +5,7 @@ Its for Android. </br>
 
 <img src="https://github.com/Chooloo/call_manage/blob/master/art/screenshots.png" height="250">
 
-<a href='https://play.google.com/store/apps/details?id=com.chooloo.www.callmanager&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+<a href='https://play.google.com/store/apps/details?id=com.vibolive.vibodialer'>
  <img alt='Get it on Google Play'
       src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'
       height="80"/>
