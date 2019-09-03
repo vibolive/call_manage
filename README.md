@@ -1,4 +1,4 @@
-# Koler
+# Vibo Phone
 A uniquely stylized phone app, designed with the user in mind.
 Believe us we want to make it good, we use it ourselfs.
 Its for Android. </br>
